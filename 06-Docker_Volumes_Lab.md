@@ -100,16 +100,5 @@
      curl localhost
      ```
 
-#### Expected Output:
-- The `webdata` volume should be listed.
-- The volume should be inspected successfully with the expected properties.
-- Accessing `localhost` should show the default Nginx page, indicating the web server is running.
-
-### Tips for Instructors
-- **Live Demonstrations:** Show each command live in a terminal to demonstrate real-time results.
-- **Student Participation:** Encourage students to execute each command themselves to gain hands-on experience.
-- **Troubleshooting Tips:** Provide solutions for common issues such as:
-  - **Volume not mounting:** Ensure the volume name and mount path are correct.
-  - **Data not persisting:** Verify that data is written to the correct path within the container.
 
 
