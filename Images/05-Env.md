@@ -24,7 +24,7 @@ ENV <key>=<value>
 ### **Example 1: Setting a Single Environment Variable**
 
 ```dockerfile
-# Step 1: Specify the base image
+
 FROM python:3.10-slim
 ENV APP_ENV=production
 ENV DEBUG=false
