@@ -29,21 +29,13 @@ You can define multiple labels in a single line or use separate `LABEL` statemen
 #### **Dockerfile Example:**
 
 ```dockerfile
-# Step 1: Specify the base image
-FROM nginx:latest
 
-# Step 2: Add metadata using LABEL
+FROM nginx:latest
 LABEL maintainer="admin@example.com" \
       version="1.0" \
       description="This is a custom Nginx Docker image for my web application"
-
-# Step 3: Copy custom configuration (optional)
 COPY custom-nginx.conf /etc/nginx/nginx.conf
-
-# Step 4: Expose port 80
 EXPOSE 80
-
-# Step 5: Set the default command
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
