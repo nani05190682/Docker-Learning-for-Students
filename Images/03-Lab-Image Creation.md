@@ -50,7 +50,7 @@
    FROM ubuntu:latest
    RUN apt-get update && apt-get install -y apache2
    EXPOSE 80
-   CMD ["/usr/sbin/apache2ctl", "-D"]
+   CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
    ```
 
 2. Build and run the image:
